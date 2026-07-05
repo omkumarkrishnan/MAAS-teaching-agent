@@ -1,0 +1,61 @@
+# Node modules
+node_modules/
+package-lock.json
+
+# IDE & Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+
+# Environment
+.env
+.env.local
+.env.*.local
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+
+# OS-specific
+.Spotlight-V100
+.Trashes
+
+# Python (if used)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+
+# Generated files
+*.pdf
+*.docx
+*.pptx
+~$*.xlsx
+.ipynb_checkpoints/
+
+# Credentials & secrets
+credentials.json
+secrets.json
+*.key
+*.pem
+.aws/
+
+# Temporary files
+temp/
+tmp/
+*.tmp
