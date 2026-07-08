@@ -153,6 +153,27 @@ Level: MBA (advanced, real-world scenario)
 Deliverable: 2000-word report + 10-minute presentation
 ```
 
+### 5. Teaching Note + Board Plan + Framework Deck Generator
+
+**Input**: Case study (PDF/text) + course placement + CLO mapping
+
+**Output**: A coordinated instructor packet saved in one case folder:
+- **Teaching Note (.docx)** — 4 discussion questions (diagnostic → analytical → strategic/design → ethical/synthesis), synopsis, learning objectives, minute-by-minute plan, board plan, recommended landing, student takeaways
+- **Case Panel Notes** — appended "PART C": panel-by-panel explanation of the board plan, each with a short "what this board does" paragraph + `Takeaways:` bullets
+- **Board Plan (.pptx)** — populate `Boardplan template 2026.pptx` (16:9; 3-col × 2-row = six panels + "Case Title" box). Standard flow: **1 Decision → 2 Debate → 3 Options → 4 Data → 5 Frameworks → 6 Landing**. Save as a NEW file (never overwrite the template); mirror the grid as a `Table Grid` at the end of the note
+- **Framework Explainer Deck (.pptx)** — one slide per framework: numbered header band, *Core question* strip, THE FRAMEWORK / IN THE CASE / DECISION IMPLICATION; plus title, overview, synthesis slides
+
+**House style**: brand navy `#1F3864`; teaching-note PART headers 15pt bold, sub-headers 12pt bold, `List Bullet` bullets. Build with `python-docx`/`python-pptx` via `C:\Users\MSI\AppData\Local\Python\bin\python.exe`.
+
+**Reference exemplar**: `C:\Users\MSI\Desktop\Case 3 MAAS  Salesbot\` (Gen AI Salesbot — note, `Boardplan - Case 3 Salesbot.pptx`, `Automation Frameworks - Case 3 Salesbot.pptx`).
+
+**Example Prompt**:
+```
+MAAS-Teach: Build teaching note + board plan + framework deck for [Case Name]
+CLO mapping: CLO1/2/3
+Board template: Boardplan template 2026.pptx
+```
+
 ---
 
 ## Quick Reference Commands
@@ -160,6 +181,7 @@ Deliverable: 2000-word report + 10-minute presentation
 | Task | Command |
 |------|---------|
 | Teaching script | `MAAS-Teach: Script Session [N] on [topic]` |
+| Board plan + note + deck | `MAAS-Teach: Board plan + teaching note for [case]` |
 | Case discussion | `MAAS-Teach: Discussion for [case name]` |
 | Session activity | `MAAS-Teach: Activity plan for [topic]` |
 | Assignment design | `MAAS-Teach: Assignment on [topic]` |
@@ -277,5 +299,5 @@ C:\Users\MSI\maas-teaching-agent\
 
 ---
 
-**Last Updated**: 2026-07-05  
-**Status**: MAAS Teaching Agent created ✅
+**Last Updated**: 2026-07-08  
+**Status**: MAAS Teaching Agent created ✅ · added Board Plan + Teaching Note + Framework Deck generator (Template #5)
