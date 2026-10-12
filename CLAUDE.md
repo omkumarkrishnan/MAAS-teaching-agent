@@ -176,6 +176,33 @@ Board template: Boardplan template 2026.pptx
 
 ---
 
+### 6. Group Submission Evaluation
+
+**Input**: Case, teaching note, assignment questions, folder of group submissions, group list PDF
+
+**Output**: Per-group evaluation
+- Marks per question with a band (22-25 strong, 17-21 adequate, 11-16 partial, 0-10 missing or wrong)
+- Total out of 100 and grade
+- Strengths, areas for improvement, data errors to verify, discussion prompts
+- Each group graded in its own pass against the same teaching-note benchmarks
+- Draft for instructor review before grades are released
+
+**Example Prompt**:
+```
+MAAS-Teach: Evaluate all group submissions in [folder] for [case name]
+Questions: [Q1–Q4, marks per question]
+Benchmarks: teaching note in [folder]
+```
+
+### 7. Marks Summary Spreadsheet
+
+**Input**: Marks per group from Skill 6
+
+**Output**: Excel workbook
+- One row per group, ordered by group number (no rank)
+- Columns: Group, each question (max marks in header), Team Members, Total (formula)
+- Navy header, bordered cells, frozen header row
+
 ## Quick Reference Commands
 
 | Task | Command |
